@@ -107,7 +107,7 @@ Additionally, you can change whether it fades individual letters, whole words, o
 
 Once again, just set the prop for `randomize` and set the appropriate value:
 
-`letters` - *default*; Sets the component to change individual letter opacity.\n
+`letters` - *default*; Sets the component to change individual letter opacity.<br>
 `words` - Sets the component to change the opacity of whole words.
 
 Any other value will set the component to change the opacity of the entire string at once.
@@ -133,17 +133,17 @@ Usage:
 
 Props:
 
-`data` - The data object for this text block.\n
-`class` - Any arbitrary CSS classes (as long as they are in the global scope).\n
-`randomize` - *default: "letters";* Expects a value of "letters" or "words", any other value fades the entire block evenly.\n
-`start` - *default: 100;* A starting value for the opacity, expected value between 0 and 100.\n
-`end` - *default: 10;* An ending value for the opacity, expected value between 0 and 100.\n
-`id` - *default: "id";* A value to match within the object keys to find a specific value.\n
-`text` - *default: "text";* The text you intend to affect the opacity of.\n
-`date` - *default: "date";* The date the text was created to have a fixed starting point.\n
-`lifespan` - *default: 60000 (1 minute in milliseconds);* - The time before the text is completely faded based on when it was created.\n
-`refreshInterval` - *default: 1000 (1 second in milliseconds);* - The time between opacity updates.\n
-`missingText` - *default: "?";* - A character to replace "missing" text parts with.\n
+`data` - The data object for this text block.<br>
+`class` - Any arbitrary CSS classes (as long as they are in the global scope).<br>
+`randomize` - *default: "letters";* Expects a value of "letters" or "words", any other value fades the entire block evenly.<br>
+`start` - *default: 100;* A starting value for the opacity, expected value between 0 and 100.<br>
+`end` - *default: 10;* An ending value for the opacity, expected value between 0 and 100.<br>
+`id` - *default: "id";* A value to match within the object keys to find a specific value.<br>
+`text` - *default: "text";* The text you intend to affect the opacity of.<br>
+`date` - *default: "date";* The date the text was created to have a fixed starting point.<br>
+`lifespan` - *default: 60000 (1 minute in milliseconds);* - The time before the text is completely faded based on when it was created.<br>
+`refreshInterval` - *default: 1000 (1 second in milliseconds);* - The time between opacity updates.<br>
+`missingText` - *default: "?";* - A character to replace "missing" text parts with.<br>
 `missingOpacity` - *default: -1 (disabled);* - The opacity threshold for considering the text parts "missing".
 
 
