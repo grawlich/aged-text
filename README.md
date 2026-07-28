@@ -1,10 +1,11 @@
 # Aging Text
 
+
 This is a small proof-of-concept built using:
 
-- SvelteKit (Front-end UI)
-- TailwindCSS (CSS Styles)
-- Prando (Seeded RNG)
+- [SvelteKit (Svelte 5)](https://github.com/sveltejs/kit) (Front-end UI)
+- [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) (CSS Styles)
+- [Prando](https://github.com/zeh/prando?tab=License-1-ov-file) (Seeded RNG)
 
 
 > [!WARNING]
@@ -172,4 +173,5 @@ I will update this section at a later time with more in-depth examples if folks 
 
 ### License
 
-This code is MIT licensed and was originally authored by @grawlich.
+Code is MIT licensed
+Copyright © 2026 [grawlich](https://github.com/grawlich)
