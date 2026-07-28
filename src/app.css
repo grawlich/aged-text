@@ -2,20 +2,24 @@
 
 
 @import 'tailwindcss';
+@import '@skeletonlabs/skeleton';
 
 
-@theme {
+@import '../themes/default.css';
+
+
+[data-theme] {
 	--typo-base--font-family: 'Instrument Sans', sans-serif;
-	--spacing: 0.22rem;
-	--color-surface-50: oklch(96.7% 0.01 316.68deg);
-	--color-surface-950: oklch(25.77% 0.01 307.99deg);
-	--color-surface-contrast-50: var(--color-surface-950);
-	--color-surface-contrast-950: var(--color-surface-50);
 }
 
 
 :root {
   color-scheme: light dark;
+}
+
+
+* {
+	border-color: light-dark(var(--color-surface-200), var(--color-surface-800));
 }
 
 
