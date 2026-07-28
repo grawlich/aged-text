@@ -123,18 +123,18 @@ Usage:
 
 Props:
 
-- `data` - The data object for this text block.
-- `class` - Any arbitrary CSS classes (as long as they are in the global scope).
-- `randomize` - *default: "letters";* Expects a value of "letters" or "words", any other value fades the entire block evenly.
-- `start` - *default: 100;* A starting value for the opacity, expected value between 0 and 100.
-- `end` - *default: 10;* An ending value for the opacity, expected value between 0 and 100.
-- `id` - *default: "id";* A value to match within the object keys to find a specific value.
-- `text` - *default: "text";* The text you intend to affect the opacity of.
-- `date` - *default: "date";* The date the text was created to have a fixed starting point.
-- `lifespan` - *default: 60000 (1 minute in milliseconds);* - The time before the text is completely faded based on when it was created.
-- `refreshInterval` - *default: 1000 (1 second in milliseconds);* - The time between opacity updates.
-- `missingText` - *default: "?";* - A character to replace "missing" text parts with.
-- `missingOpacity` - *default: -1 (disabled);* - The opacity threshold for considering the text parts "missing".
+`data` - The data object for this text block.
+`class` - Any arbitrary CSS classes (as long as they are in the global scope).
+`randomize` - *default: "letters";* Expects a value of "letters" or "words", any other value fades the entire block evenly.
+`start` - *default: 100;* A starting value for the opacity, expected value between 0 and 100.
+`end` - *default: 10;* An ending value for the opacity, expected value between 0 and 100.
+`id` - *default: "id";* A value to match within the object keys to find a specific value.
+`text` - *default: "text";* The text you intend to affect the opacity of.
+`date` - *default: "date";* The date the text was created to have a fixed starting point.
+`lifespan` - *default: 60000 (1 minute in milliseconds);* - The time before the text is completely faded based on when it was created.
+`refreshInterval` - *default: 1000 (1 second in milliseconds);* - The time between opacity updates.
+`missingText` - *default: "?";* - A character to replace "missing" text parts with.
+`missingOpacity` - *default: -1 (disabled);* - The opacity threshold for considering the text parts "missing".
 
 
 Example:
