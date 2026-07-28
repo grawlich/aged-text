@@ -32,13 +32,13 @@ The code for fading the text is contained entirely within the Svelte component, 
 
 The component only outputs a paragraph `<p>` tag with spans `<span>` around the text chunks.
 
-```
+```svelte
 <AgedText data={item} randomize="words" />
 ```
 
 would output something like:
 
-```
+```html
 <p>
   <span style="opacity: 42%;">Just</span>
   <span style="opacity: 69%;">three</span>
