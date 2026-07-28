@@ -58,6 +58,7 @@
   .post-list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: calc(var(--spacing) * 4);
   }
 
@@ -67,12 +68,24 @@
     padding: calc(var(--spacing) * 4);
     background-color: light-dark(var(--color-surface-950), var(--color-surface-50));
     color: light-dark(var(--color-surface-contrast-950), var(--color-surface-contrast-50));
-    font-weight: 700;
+    font-weight: 600;
     display: flex;
     border-radius: calc(var(--spacing) * 3);
     flex-direction: column;
     align-items: center;
     gap: calc(var(--spacing) * 8);
+    box-shadow: 0 0 0 0 transparent;
+    transition: 150ms ease all;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 .5rem 0 color-mix(in oklch, var(--color-black) 25%, transparent);
+    }
+    
+    @supports (corner-shape: squircle) {
+      corner-shape: squircle;
+      border-radius: 100vh;
+    }
   }
 
 

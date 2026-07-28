@@ -14,6 +14,6 @@
 
 <style>
 	.main-contents {
-		padding: calc(var(--spacing) * 4);
+		padding: calc(var(--spacing) * 8);
 	}
 </style>

@@ -98,9 +98,10 @@ Additionally, you can change whether it fades individual letters, whole words, o
 
 Once again, just set the prop for `randomize` and set the appropriate value:
 
-- `letters` - *default*; Sets the component to change individual letter opacity.
-- `words` - Sets the component to change the opacity of whole words.
-- `(any)` - Any other value will set the component to change the opacity of the entire string at once.
+`letters` - *default*; Sets the component to change individual letter opacity.
+`words` - Sets the component to change the opacity of whole words.
+
+Any other value will set the component to change the opacity of the entire string at once.
 
 
 Usage:
