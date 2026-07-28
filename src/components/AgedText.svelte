@@ -98,7 +98,6 @@
     if (randomize === "letters") {
       // Get post parts
       let letters = text_body.split("");
-      console.log(letters)
 
       // Return values
       result = letters.map((char, i) => {
@@ -143,7 +142,6 @@
       value.forEach(item => {
         res.push(item?.part);
       });
-      console.log(res.join(""));
       return res.join("");
     }
     else if (randomize === "words") {

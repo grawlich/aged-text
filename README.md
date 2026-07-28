@@ -165,3 +165,11 @@ This is a very basic component, all things considered. Most of the non-reactive 
 For the output, simply use your framework's own syntax to create the required reactivity and HTML output. Many frameworks offer similar loops and conditional blocks.
 
 I will update this section at a later time with more in-depth examples if folks really want a guide for their specific framework.
+
+
+---
+
+
+### License
+
+This code is MIT licensed and was originally authored by @grawlich.
