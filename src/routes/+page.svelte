@@ -1,5 +1,5 @@
 <script>
-	// Components
+  // Components
   import AgedText from '../components/AgedText.svelte';
 
 
@@ -44,7 +44,7 @@
     },
   ];
 
-  
+
   let randomize = $state("letters");
   let start = $state(100);
   let end = $state(10);
@@ -66,9 +66,6 @@
     });
   }
 </script>
-
-
-
 
 
 <!-- Post list -->
@@ -160,49 +157,5 @@
   :global(.post-text) {
     font-size: var(--text-lg);
     line-height: 1;
-  }
-
-
-  .post-date {
-    width: 100%;
-    font-size: var(--text-xs);
-    line-height: 1;
-    text-align: right;
-  }
-
-
-  .settings-container {
-    max-width: 65ch;
-    margin: 0 auto;
-    margin-bottom: calc(var(--spacing) * 4);
-    padding: calc(var(--spacing) * 4);
-    padding-top: calc(var(--spacing) * 2);
-    border-width: 1px;
-    border-radius: .75rem;
-  }
-
-
-  .settings-title {
-    font-weight: 600;
-    padding-inline: calc(var(--spacing) * 2);
-  }
-
-
-  .setting-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-
-  .setting-label {
-    font-weight: 500;
-    font-size: var(--text-sm);
-  }
-
-
-  .setting-select {
-    width: fit-content;
-    border-width: 1px;
-    border-radius: .5rem;
   }
 </style>

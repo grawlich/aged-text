@@ -9,7 +9,7 @@
 
 
 [data-theme] {
-	--typo-base--font-family: 'Instrument Sans', sans-serif;
+  --typo-base--font-family: 'Instrument Sans', sans-serif;
 }
 
 
@@ -19,12 +19,12 @@
 
 
 * {
-	border-color: light-dark(var(--color-surface-200), var(--color-surface-800));
+  border-color: light-dark(var(--color-surface-200), var(--color-surface-800));
 }
 
 
 body {
   background: light-dark(var(--color-surface-50), var(--color-surface-950));
   color: light-dark(var(--color-surface-contrast-50), var(--color-surface-contrast-950));
-	font-family: var(--typo-base--font-family);
+  font-family: var(--typo-base--font-family);
 }
