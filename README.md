@@ -1,6 +1,10 @@
 # Aging Text
 
 
+> [!NOTE]
+>*This project was originally created Feb. 10th, 2025*
+
+
 This is a small proof-of-concept built using:
 
 - [SvelteKit (Svelte 5)](https://github.com/sveltejs/kit) (Front-end UI)
@@ -19,6 +23,7 @@ This is a small proof-of-concept built using:
 
 
 Displays a faded string based on when the text was created and the maximum lifetime.
+
 
 
 ---
@@ -186,4 +191,4 @@ I will update this section at a later time with more in-depth examples if folks 
 
 Code is MIT licensed
 
-Copyright © 2026 [grawlich](https://github.com/grawlich)
+Copyright © 2025 - 2026 [grawlich](https://github.com/grawlich)
