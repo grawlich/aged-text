@@ -7,8 +7,8 @@
 
 This is a small proof-of-concept built using:
 
-- [SvelteKit (Svelte 5)](https://github.com/sveltejs/kit) (Front-end UI)
-- [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) (CSS Styles)
+- [SvelteKit (Svelte 5)](https://svelte.dev/docs/kit/introduction) (Front-end UI)
+- [TailwindCSS](https://tailwindcss.com/docs/installation/using-vite) (CSS Styles)
 - [Prando](https://github.com/zeh/prando?tab=License-1-ov-file) (Seeded RNG)
 
 
