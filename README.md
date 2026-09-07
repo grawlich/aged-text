@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+> No AI/LLMs were used in any stage of this project's development. Any errors are purely mine.
+
+
 # Aging Text
 
 
