@@ -1,13 +1,10 @@
 > [!IMPORTANT]
 > No AI/LLMs were used in any stage of this project's development. Any errors are purely mine.
 
-
 # Aging Text
-
 
 > [!NOTE]
 >*This project was originally created Feb. 10th, 2025 and recently updated.*
-
 
 This is a small proof-of-concept built using:
 
@@ -15,29 +12,20 @@ This is a small proof-of-concept built using:
 - [TailwindCSS](https://tailwindcss.com/docs/installation/using-vite) (CSS Styles)
 - [Prando](https://github.com/zeh/prando?tab=License-1-ov-file) (Seeded RNG)
 
-
 > [!WARNING]
 > Due to this merely being a proof-of-concept, no support is provided at this time. Updates will come as I deem necessary, but for the foreseeable future, this is how the component will remain.
 
-
 [Demo](https://aged-text.vercel.app/)
-
 
 ### Purpose:
 
-
 Displays a faded string based on when the text was created and the maximum lifetime.
-
-
 
 ---
 
-
 ### How to use in your own project
 
-
-The code for fading the text is contained entirely within the Svelte component, minus the `Prando` dependency. All you need to do is simply copy/paste the `AgedText.svelte` component into your project, install `Prando` with `pnpm add prando` or `npm i prando`, and import the `AgedText.svelte` component into the location you wish to use it.
-
+The code for fading the text is contained entirely within the Svelte component, minus the `Prando` dependency. All you need to do is simply copy/paste the [`AgedText.svelte`](./blob/main/src/components/AgedText.svelte) component into your project, install `Prando` with `pnpm add prando` or `npm i prando`, and import the `AgedText.svelte` component into the location you wish to use it.
 
 The component only outputs a paragraph `<p>` tag with spans `<span>` around the text chunks.
 
@@ -55,9 +43,7 @@ would output something like:
 </p>
 ```
 
-
 By default, it is looking for an array of JSON objects containing values for `id`, `text`, and `date`.
-
 
 It should all be at the top-level, and look similar to this:
 
@@ -72,7 +58,6 @@ const data = [
 ]
 ```
 
-
 Those objects can then be passed as a value to the `data` props of the component.
 
 ```svelte
@@ -80,7 +65,6 @@ Those objects can then be passed as a value to the `data` props of the component
   <AgedText data={item} />
 {/each}
 ```
-
 
 The component is looking for specific key values by default, but those can be manually adjusted via props:
 
@@ -95,7 +79,6 @@ const customData = [
 ]
 ```
 
-
 ```svelte
 {#each customData as item}
   <AgedText
@@ -107,12 +90,9 @@ const customData = [
 {/each}
 ```
 
-
 This effectively just tells the component to look for a specified object key, it can be anything you want, as long as it exists and is a valid data type.
 
-
 Additionally, you can change whether it fades individual letters, whole words, or the entire string at once!
-
 
 Once again, just set the prop for `randomize` and set the appropriate value:
 
@@ -120,7 +100,6 @@ Once again, just set the prop for `randomize` and set the appropriate value:
 `words` - Sets the component to change the opacity of whole words.
 
 Any other value will set the component to change the opacity of the entire string at once.
-
 
 Usage:
 
@@ -133,12 +112,9 @@ Usage:
 {/each}
 ```
 
-
 ---
 
-
 ### Anatomy
-
 
 Props:
 
@@ -154,7 +130,6 @@ Props:
 `refreshInterval` - *default: 1000 (1 second in milliseconds);* - The time between opacity updates.<br>
 `missingText` - *default: "?";* - A character to replace "missing" text parts with.<br>
 `missingOpacity` - *default: -1 (disabled);* - The opacity threshold for considering the text parts "missing".
-
 
 Example:
 
@@ -174,9 +149,7 @@ Example:
 />
 ```
 
-
 ---
-
 
 ### Other frameworks
 
@@ -186,11 +159,8 @@ For the output, simply use your framework's own syntax to create the required re
 
 I will update this section at a later time with more in-depth examples if folks really want a guide for their specific framework.
 
-
 ---
 
-
 ### License
-
 
 Code is MIT licensed
