@@ -25,7 +25,7 @@ Displays a faded string based on when the text was created and the maximum lifet
 
 ### How to use in your own project
 
-The code for fading the text is contained entirely within the Svelte component, minus the `Prando` dependency. All you need to do is simply copy/paste the [`AgedText.svelte`](./blob/main/src/components/AgedText.svelte) component into your project, install `Prando` with `pnpm add prando` or `npm i prando`, and import the `AgedText.svelte` component into the location you wish to use it.
+The code for fading the text is contained entirely within the Svelte component, minus the `Prando` dependency. All you need to do is simply copy/paste the [`AgedText.svelte`](./src/components/AgedText.svelte) component into your project, install `Prando` with `pnpm add prando` or `npm i prando`, and import the `AgedText.svelte` component into the location you wish to use it.
 
 The component only outputs a paragraph `<p>` tag with spans `<span>` around the text chunks.
 
