@@ -11,7 +11,6 @@
 	{@render children()}
 </main>
 
-
 <style>
 	.main-contents {
 		padding: calc(var(--spacing) * 8);
