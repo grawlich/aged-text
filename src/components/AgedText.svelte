@@ -2,10 +2,8 @@
   // Svelte utilities
   import { onMount } from "svelte";
 
-
   // Utilities
   import Prando from 'prando';
-
 
   // Props
   let {
@@ -24,22 +22,18 @@
     missingText = "?", // Can replace text below a certain opacity threshold; default: "?"
   } = $props();
 
-
   // Destructure data
   let text_id = $derived(data[id]);
   let text_body = $derived(data[text]); 
   let date_created = $derived(new Date(data[date]).getTime());
 
-
   // Prepare to store post contents
   let contents = $state([]);
-
 
   // Setup seeded RNG
   function RNG(seed) {
     return new Prando(seed).next(-1, 1);
   }
-
 
   // Generate random opacity value
   function generateRandomOpacity(currentAge, seed) {
@@ -58,7 +52,6 @@
     return Math.min(Math.max(base + totalOffset, end), start);
   }
 
-
   // Replace character values based on threshold
   function swapCharacters(string, value) {
     if (Number(missingOpacity) > 0 && Number(missingOpacity) >= value) {
@@ -74,7 +67,6 @@
 
     return string;
   };
-
 
   // Set text opacity
   function setOpacity() {
@@ -133,7 +125,6 @@
     return { result };
   }
 
-
   // Generate title/aria-label for accessibility
   function generateLabel(value) {
     if (randomize === "letters") {
@@ -158,7 +149,6 @@
     }
   };
 
-
   // Convert the text on component render
   onMount(()=>{
     // Set initial value
@@ -172,7 +162,6 @@
     }
   });
 </script>
-
 
 <!-- Text container -->
 <p class={className} title={generateLabel(contents?.result ?? [])} aria-label={generateLabel(contents?.result ?? [])}>
@@ -195,12 +184,10 @@
   {/if}
 </p>
 
-
 <!--
 @component
 ## AgedText
 Displays a faded string based on when the text was created and the maximum lifetime.
-
 
 ### Prop Definitions
 - `data` - The data object for this text block.
@@ -215,7 +202,6 @@ Displays a faded string based on when the text was created and the maximum lifet
 - `refreshInterval` - *default: 1000 (1 second in milliseconds);* - The time between opacity updates.
 - `missingText` - *default: "?";* - A character to replace "missing" text parts with.
 - `missingOpacity` - *default: -1 (disabled);* - The opacity threshold for considering the text parts "missing".
-
 
 @example
 <AgedText
