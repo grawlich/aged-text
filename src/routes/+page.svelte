@@ -2,7 +2,6 @@
   // Components
   import AgedText from '../components/AgedText.svelte';
 
-
   // Sample data (for testing)
   let data = [
     {
@@ -27,7 +26,6 @@
     },
   ];
 
-
   // Settings for demo
   const randomizeOptions = [
     {
@@ -44,7 +42,6 @@
     },
   ];
 
-
   let randomize = $state("letters");
   let start = $state(100);
   let end = $state(10);
@@ -59,14 +56,12 @@
   let lifespan = $state(60000 * 100000);
   let refreshInterval = $state(10000);
 
-
   function applyDemoText(text) {
     data.forEach((item)=>{
       item.post_body = text;
     });
   }
 </script>
-
 
 <!-- Post list -->
 <ul class="post-list">
@@ -95,7 +90,6 @@
   {/each}
 </ul>
 
-
 <style>
   .post-list {
     display: flex;
@@ -103,7 +97,6 @@
     align-items: center;
     gap: calc(var(--spacing) * 2);
   }
-
 
   .post-card {
     position: relative;
@@ -129,7 +122,6 @@
       box-sizing: border-box !important;
     }
 
-
     &:hover {
       transform: scale(1.025);
       box-shadow: 0 1rem 0 color-mix(in oklch, var(--color-black) 25%, transparent);
@@ -151,9 +143,8 @@
     }
   }
 
-
-	/* Non-Tailwind classes must be in the global scope */
-	/* You could also add this to the `app.css` file without `:global()` instead */
+  /* Non-Tailwind classes must be in the global scope */
+  /* You could also add this to the `app.css` file without `:global()` instead */
   :global(.post-text) {
     font-size: var(--text-lg);
     line-height: 1;
